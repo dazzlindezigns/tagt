@@ -173,24 +173,7 @@ for slug, (title, purpose) in PAGES.items():
         add_table(doc, ["#", "Photo spot", "What is there now", "Photo file name (type it here)"], photos, [0.4, 1.5, 2.2, 2.4])
     counts[slug] = (sorted(r["n"] for r in found), sorted(r["n"] for r in words + photos))
 
-doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
-doc.add_heading("For Dani and Claude Code only (team can skip this)", level=1)
-doc.add_paragraph("How an import works:")
-for parts in [
-    [("Export this doc as Markdown to ", False), ("/content/site-copy.md", "code"), (". Photos go in ", False), ("/content/images/", "code"), (".", False)],
-    [("A row is identified by page section plus number (for example ", False), ("3-visit-us #5", "code"), (").", False)],
-    [("Only rows where “Your new words” or “Photo file name” is not empty get imported. Empty means keep what's live.", False)],
-    [("Write photo alt text from the image itself.", False)],
-    [("Do not renumber. New spots get the next unused number in their section.", False)],
-    [("Run the import script, ", False), ("scripts/import-content", "code"), (" (being built next). Report every change, and never publish without Dani's go-ahead.", False)],
-]:
-    p = doc.add_paragraph(style="List Bullet")
-    for t, kind in parts:
-        r = p.add_run(t)
-        if kind == "code":
-            r.font.name = "Courier New"
-p = doc.add_paragraph("Section keys: ")
-p.add_run(", ".join(PAGES)).font.name = "Courier New"
+# The import notes live in docs/RUNBOOK.md, not in the team sheet (Dani, Nov 10).
 
 doc.save(OUT)
 bad = {k: v for k, v in counts.items() if v[0] != v[1]}

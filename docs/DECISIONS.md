@@ -55,6 +55,11 @@ Recurring givers already have to re-enroll once (ShelbyNext → new system). If 
 - **Privacy Policy and Terms & Conditions** written by Claude. **Not legal advice: have your treasurer or an attorney review before launch.** Things to confirm: the church's legal name, the giving refund wording, and that the prayer wall will show first names only (the policy promises that, so the prayer wall must be built that way). The text-message section uses the wording 10DLC carriers look for.
 - **Header:** About and Ministries now have drop-down menus. On phones they show as indented links in the menu.
 
+## Content sheet Google Doc
+
+- Lives at the link Dani gave (same link for every update). Updated in place, never replaced.
+- **No "For Dani and Claude Code only" section in the doc** (Dani removed it, Nov 10). Import notes are in `docs/RUNBOOK.md`.
+
 ## Decisions made (change any of these if you disagree)
 
 | # | Decision | Why |
