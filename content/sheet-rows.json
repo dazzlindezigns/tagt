@@ -196,6 +196,12 @@
     "now": "Watch Live"
    },
    {
+    "n": 33,
+    "label": "Menu: first item under Ministries",
+    "kind": "text",
+    "now": "All Ministries"
+   },
+   {
     "n": 34,
     "label": "Footer: link words 3",
     "kind": "text",

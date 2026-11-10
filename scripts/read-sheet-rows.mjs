@@ -14,6 +14,11 @@ const out = [];
 for (const { slug, path } of SHEET_PAGES) {
   await page.goto(BASE_URL + path, { waitUntil: "networkidle" });
   await page.evaluate(() => document.documentElement.classList.add("sheet-mode"));
+  // Same as the page pictures: the Ministries drop-down is open in the "Every page" picture.
+  if (slug === "0-every-page") {
+    await page.click('button[aria-controls="menu-ministries"]');
+    await page.waitForSelector("#menu-ministries");
+  }
   const rows = await page.evaluate((slug) => {
     const seen = new Map();
     document.querySelectorAll(`[data-sheet-page="${slug}"]`).forEach((el) => {
