@@ -55,6 +55,16 @@ Recurring givers already have to re-enroll once (ShelbyNext → new system). If 
 - **Privacy Policy and Terms & Conditions** written by Claude. **Not legal advice: have your treasurer or an attorney review before launch.** Things to confirm: the church's legal name, the giving refund wording, and that the prayer wall will show first names only (the policy promises that, so the prayer wall must be built that way). The text-message section uses the wording 10DLC carriers look for.
 - **Header:** About and Ministries now have drop-down menus. On phones they show as indented links in the menu.
 
+## YouTube (Nov 10)
+
+- Channel ID `UCa1RK9QABO0KllO5YGg9IPw` (public) is the default in `src/lib/site.ts`.
+- Videos come from the channel's public feed: no API key, the latest 15 videos, refreshed every 15 minutes.
+- **Featured Teaching** = the newest video with a real title. Videos titled only with a date ("November 9, 2026") are treated as service recordings.
+- **Live:** during service times (15 minutes before to 2.5 hours after each start, Austin time) the player shows the live stream. Otherwise it plays the latest video with the "not live" line. True live detection and the full archive with series, speaker and Scripture need a YouTube API key and the admin (build prompt §6).
+- Each video has its own page at `/teachings/<video id>`, played inside the site.
+- The archive group names (Recent Messages, Bible Study, Special Services, Series) show as labels. They become working filters once messages are grouped in the admin.
+- **Possible giving link:** the video descriptions say "Link to give: https://tinyurl.com/39k42x94", which goes to a ministryforms.net (ShelbyNext) form. Waiting for Dani to confirm it's the giving page before it's used.
+
 ## Content sheet Google Doc
 
 - Lives at the link Dani gave (same link for every update). Updated in place, never replaced.

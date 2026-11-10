@@ -4,7 +4,8 @@ import { text } from "./content";
 export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://tagtministry.org",
   giveUrl: process.env.NEXT_PUBLIC_GIVE_URL || "",
-  youtubeChannelId: process.env.YOUTUBE_CHANNEL_ID || "",
+  // The TAGT YouTube channel (public, not a secret).
+  youtubeChannelId: process.env.YOUTUBE_CHANNEL_ID || "UCa1RK9QABO0KllO5YGg9IPw",
 };
 
 export function address() {

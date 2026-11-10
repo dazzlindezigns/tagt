@@ -72,3 +72,8 @@ export function nextDates(service: Service, count: number, now = new Date()): Oc
   const today = austinToday(now);
   return occurrences(today, addDays(today, count * 7 + 7)).filter((o) => o.kind === service.key).slice(0, count);
 }
+
+/** When the live stream is shown instead of the latest video: 15 minutes before to 2.5 hours after each service start. */
+export function liveWindows() {
+  return SERVICES.map((s) => ({ weekday: s.weekday, start: s.hour * 60 + s.minute - 15, end: s.hour * 60 + s.minute + 150 }));
+}

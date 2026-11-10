@@ -10,6 +10,8 @@ const { chromium } = createRequire(import.meta.url)("playwright");
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1000, height: 900 } });
+// The YouTube player never stops loading, so block it (it's hidden in the pictures). Thumbnails still load.
+await page.route(/youtube(-nocookie)?\.com|googlevideo\.com/, (route) => route.abort());
 const out = [];
 for (const { slug, path } of SHEET_PAGES) {
   await page.goto(BASE_URL + path, { waitUntil: "networkidle" });

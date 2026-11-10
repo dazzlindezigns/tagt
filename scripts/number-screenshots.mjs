@@ -18,6 +18,8 @@ mkdirSync(outDir, { recursive: true });
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1000, height: 900 }, deviceScaleFactor: 1 });
+// The YouTube player never stops loading, so block it (it's hidden in the pictures). Thumbnails still load.
+await page.route(/youtube(-nocookie)?\.com|googlevideo\.com/, (route) => route.abort());
 let problems = 0;
 
 for (const { slug, path } of SHEET_PAGES) {

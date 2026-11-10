@@ -4,15 +4,18 @@ import { ServiceCards } from "@/components/ServiceCards";
 import { ButtonLink } from "@/components/Button";
 import { EventList } from "@/components/EventList";
 import { VideoBlock } from "@/components/VideoBlock";
-import { upcoming } from "@/lib/services";
+import { liveWindows, upcoming } from "@/lib/services";
+import { recentVideos } from "@/lib/youtube";
+import { site } from "@/lib/site";
 import { text } from "@/lib/content";
 import { IconCard } from "@/components/IconCard";
 import { ABOUT_PAGES } from "@/lib/about";
 
 const P = "1-home" as const;
-export const revalidate = 3600;
+export const revalidate = 900;
 
-export default function Home() {
+export default async function Home() {
+  const videos = await recentVideos();
   return (
     <>
       <Hero photo={{ page: P, n: 6 }} tall overlap>
@@ -35,7 +38,13 @@ export default function Home() {
       <section className="mx-auto grid max-w-site gap-12 px-gutter py-16 md:grid-cols-[1.4fr_1fr] md:py-20">
         <div className="flex min-w-0 flex-col gap-5">
           <T page={P} n={7} as="h2" className="h-section" />
-          <VideoBlock notLive={text("5-teachings", 5)} />
+          <VideoBlock
+            channelId={site.youtubeChannelId}
+            latest={videos[0]}
+            windows={liveWindows()}
+            notLive={text("5-teachings", 5)}
+            empty="Messages appear here automatically from the church YouTube channel."
+          />
           <ButtonLink href="/teachings" variant="outline" className="self-start">
             {text("0-every-page", 4)}
           </ButtonLink>
