@@ -1,0 +1,944 @@
+[
+ {
+  "slug": "0-every-page",
+  "title": "Every page (top menu, bottom footer, service times)",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Menu word 1",
+    "now": "About",
+    "kind": "text"
+   },
+   {
+    "n": 2,
+    "label": "Menu word 2",
+    "now": "Visit Us",
+    "kind": "text"
+   },
+   {
+    "n": 3,
+    "label": "Menu word 3",
+    "now": "Ministries",
+    "kind": "text"
+   },
+   {
+    "n": 4,
+    "label": "Menu word 4",
+    "now": "Teachings",
+    "kind": "text"
+   },
+   {
+    "n": 5,
+    "label": "Menu word 5",
+    "now": "Events",
+    "kind": "text"
+   },
+   {
+    "n": 6,
+    "label": "Menu word 6",
+    "now": "Prayer Requests",
+    "kind": "text"
+   },
+   {
+    "n": 7,
+    "label": "Menu word 7",
+    "now": "Give",
+    "kind": "text"
+   },
+   {
+    "n": 8,
+    "label": "Church name (top left)",
+    "now": "The Abiding Glory Tabernacle",
+    "kind": "text"
+   },
+   {
+    "n": 9,
+    "label": "Small city line under the name",
+    "now": "AUSTIN, TEXAS",
+    "kind": "text"
+   },
+   {
+    "n": 10,
+    "label": "Gold button at the top right",
+    "now": "Plan Your Visit",
+    "kind": "text"
+   },
+   {
+    "n": 11,
+    "label": "Service 1: day",
+    "now": "SUNDAYS",
+    "kind": "text"
+   },
+   {
+    "n": 12,
+    "label": "Service 1: name",
+    "now": "Morning Prayer",
+    "kind": "text"
+   },
+   {
+    "n": 13,
+    "label": "Service 1: time",
+    "now": "9:30 AM",
+    "kind": "text"
+   },
+   {
+    "n": 14,
+    "label": "Service 1: short line",
+    "now": "Intercession, worship, and the manifested presence of God.",
+    "kind": "text"
+   },
+   {
+    "n": 15,
+    "label": "Service 2: day",
+    "now": "SUNDAYS",
+    "kind": "text"
+   },
+   {
+    "n": 16,
+    "label": "Service 2: name",
+    "now": "Worship Service",
+    "kind": "text"
+   },
+   {
+    "n": 17,
+    "label": "Service 2: time",
+    "now": "10:30 AM",
+    "kind": "text"
+   },
+   {
+    "n": 18,
+    "label": "Service 2: short line",
+    "now": "The Word taught with power \u2014 children taught at their level.",
+    "kind": "text"
+   },
+   {
+    "n": 19,
+    "label": "Service 3: day",
+    "now": "WEDNESDAYS",
+    "kind": "text"
+   },
+   {
+    "n": 20,
+    "label": "Service 3: name",
+    "now": "Bible Study",
+    "kind": "text"
+   },
+   {
+    "n": 21,
+    "label": "Service 3: time",
+    "now": "7:00 PM",
+    "kind": "text"
+   },
+   {
+    "n": 22,
+    "label": "Service 3: short line",
+    "now": "Grow deeper in the Word, midweek.",
+    "kind": "text"
+   },
+   {
+    "n": 23,
+    "label": "Footer: church name",
+    "now": "The Abiding Glory Tabernacle",
+    "kind": "text"
+   },
+   {
+    "n": 24,
+    "label": "Footer: street address",
+    "now": "12636 Research Blvd",
+    "kind": "text"
+   },
+   {
+    "n": 25,
+    "label": "Footer: city, state, zip",
+    "now": "Austin, TX 78759",
+    "kind": "text"
+   },
+   {
+    "n": 26,
+    "label": "Footer: church email",
+    "now": "[Needs your words]",
+    "kind": "text"
+   },
+   {
+    "n": 27,
+    "label": "Footer: church phone",
+    "now": "[Needs your words]",
+    "kind": "text"
+   },
+   {
+    "n": 28,
+    "label": "Footer: Facebook link",
+    "now": "facebook.com/TheAbidingGloryTabernacle",
+    "kind": "text"
+   },
+   {
+    "n": 29,
+    "label": "Footer: YouTube link",
+    "now": "[Needs your words]",
+    "kind": "text"
+   },
+   {
+    "n": 30,
+    "label": "Footer: link words 1",
+    "now": "Send a Prayer Request",
+    "kind": "text"
+   },
+   {
+    "n": 31,
+    "label": "Footer: link words 2",
+    "now": "Plan Your Visit",
+    "kind": "text"
+   }
+  ],
+  "size": [
+   1000,
+   554
+  ]
+ },
+ {
+  "slug": "1-home",
+  "title": "Home",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Small address line above the headline",
+    "now": "12636 RESEARCH BLVD \u00b7 AUSTIN, TX 78759",
+    "kind": "text"
+   },
+   {
+    "n": 2,
+    "label": "Big headline",
+    "now": "Come Worship With Us in Austin!",
+    "kind": "text"
+   },
+   {
+    "n": 3,
+    "label": "Text under the headline",
+    "now": "You'll be greeted like family. Our services open with prayer and worship, and the Word is taught with power.",
+    "kind": "text"
+   },
+   {
+    "n": 4,
+    "label": "Gold button",
+    "now": "Plan Your Visit",
+    "kind": "text"
+   },
+   {
+    "n": 5,
+    "label": "Outline button",
+    "now": "Our Ministries",
+    "kind": "text"
+   },
+   {
+    "n": 6,
+    "label": "Big picture at the top of the page",
+    "now": "Sanctuary photo (the banners and cross)",
+    "kind": "photo"
+   },
+   {
+    "n": 7,
+    "label": "Heading above the latest video",
+    "now": "Latest Message",
+    "kind": "text"
+   },
+   {
+    "n": 8,
+    "label": "Heading above the events",
+    "now": "Coming Up",
+    "kind": "text"
+   },
+   {
+    "n": 9,
+    "label": "Small gold word above the giving heading",
+    "now": "GIVE",
+    "kind": "text"
+   },
+   {
+    "n": 10,
+    "label": "Giving heading",
+    "now": "Partner With Us",
+    "kind": "text"
+   },
+   {
+    "n": 11,
+    "label": "Giving message",
+    "now": "Your giving helps us reach the lost for Jesus Christ and train up disciples in the demonstration of the Spirit and power.",
+    "kind": "text"
+   },
+   {
+    "n": 12,
+    "label": "Giving button",
+    "now": "Give Online",
+    "kind": "text"
+   }
+  ],
+  "size": [
+   1000,
+   1409
+  ]
+ },
+ {
+  "slug": "2-about",
+  "title": "About",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Small gold word at the top",
+    "now": "ABOUT US",
+    "kind": "text"
+   },
+   {
+    "n": 2,
+    "label": "Big headline",
+    "now": "Our Story & Mission",
+    "kind": "text"
+   },
+   {
+    "n": 3,
+    "label": "Text under the headline",
+    "now": "The Glory of God is revealed through the truth of the Word.",
+    "kind": "text"
+   },
+   {
+    "n": 4,
+    "label": "Big picture at the top of the page",
+    "now": "Congregation worshiping with raised hands",
+    "kind": "photo"
+   },
+   {
+    "n": 5,
+    "label": "Small gold words above \u201cWho We Are\u201d",
+    "now": "A CHURCH IN AUSTIN, TEXAS",
+    "kind": "text"
+   },
+   {
+    "n": 6,
+    "label": "Heading",
+    "now": "Who We Are",
+    "kind": "text"
+   },
+   {
+    "n": 7,
+    "label": "Paragraph",
+    "now": "The Abiding Glory Tabernacle is a family of believers passionate about God's presence, His Word, and people. We exist to reveal God's glory through the truth of the Word, training disciples, and walking in the Spirit and in power for the advancement of His Kingdom.",
+    "kind": "text"
+   },
+   {
+    "n": 8,
+    "label": "Button",
+    "now": "Plan Your Visit",
+    "kind": "text"
+   },
+   {
+    "n": 9,
+    "label": "Photo next to \u201cWho We Are\u201d",
+    "now": "A smiling group of church members",
+    "kind": "photo"
+   },
+   {
+    "n": 10,
+    "label": "Box title: Our Beliefs",
+    "now": "Our Beliefs",
+    "kind": "text"
+   },
+   {
+    "n": 11,
+    "label": "Box words: Our Beliefs",
+    "now": "Rooted in the truth of God's Word.",
+    "kind": "text"
+   },
+   {
+    "n": 12,
+    "label": "Box title: Our Mission",
+    "now": "Our Mission",
+    "kind": "text"
+   },
+   {
+    "n": 13,
+    "label": "Box words: Our Mission",
+    "now": "Training disciples, walking in the Spirit and in power.",
+    "kind": "text"
+   },
+   {
+    "n": 14,
+    "label": "Box title: Our Heart",
+    "now": "Our Heart",
+    "kind": "text"
+   },
+   {
+    "n": 15,
+    "label": "Box words: Our Heart",
+    "now": "A place for real people, real faith, real impact.",
+    "kind": "text"
+   }
+  ],
+  "size": [
+   1000,
+   951
+  ]
+ },
+ {
+  "slug": "3-visit-us",
+  "title": "Visit Us",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Small gold word at the top",
+    "now": "VISIT US",
+    "kind": "text"
+   },
+   {
+    "n": 2,
+    "label": "Big headline",
+    "now": "Planning Your First Visit?",
+    "kind": "text"
+   },
+   {
+    "n": 3,
+    "label": "First paragraph",
+    "now": "You'll be greeted like family. Our services open with prayer and worship, and the Word is taught with power. Children are welcome and are taught the Word at their level. We'd love to meet you and fellowship with you in person!",
+    "kind": "text"
+   },
+   {
+    "n": 4,
+    "label": "Second paragraph",
+    "now": "Join us Sunday mornings for prayer at 9:30 AM and worship at 10:30 AM, and Wednesday evenings for Bible study at 7:00 PM.",
+    "kind": "text"
+   },
+   {
+    "n": 5,
+    "label": "Parking and entrance note",
+    "now": "[Needs your words] (where to park, which door to use)",
+    "kind": "text"
+   },
+   {
+    "n": 6,
+    "label": "Picture at the top of the page",
+    "now": "A greeter welcoming a guest at the door",
+    "kind": "photo"
+   },
+   {
+    "n": 7,
+    "label": "Photo of the building",
+    "now": "Front of the building and entrance",
+    "kind": "photo"
+   },
+   {
+    "n": 8,
+    "label": "Heading by the address",
+    "now": "Our Location",
+    "kind": "text"
+   },
+   {
+    "n": 9,
+    "label": "Address words",
+    "now": "12636 Research Blvd, Austin, TX 78759",
+    "kind": "text"
+   },
+   {
+    "n": 10,
+    "label": "Button under the address",
+    "now": "Get Directions",
+    "kind": "text"
+   },
+   {
+    "n": 11,
+    "label": "Small gold words above the four boxes",
+    "now": "FIRST TIME HERE?",
+    "kind": "text"
+   },
+   {
+    "n": 12,
+    "label": "Box title: Friendly People",
+    "now": "Friendly People",
+    "kind": "text"
+   },
+   {
+    "n": 13,
+    "label": "Box words: Friendly People",
+    "now": "You'll be greeted with a warm welcome.",
+    "kind": "text"
+   },
+   {
+    "n": 14,
+    "label": "Box title: Meaningful Worship",
+    "now": "Meaningful Worship",
+    "kind": "text"
+   },
+   {
+    "n": 15,
+    "label": "Box words: Meaningful Worship",
+    "now": "Experience God's presence through worship.",
+    "kind": "text"
+   },
+   {
+    "n": 16,
+    "label": "Box title: Relevant Teaching",
+    "now": "Relevant Teaching",
+    "kind": "text"
+   },
+   {
+    "n": 17,
+    "label": "Box words: Relevant Teaching",
+    "now": "Biblical truth for everyday life.",
+    "kind": "text"
+   },
+   {
+    "n": 18,
+    "label": "Box title: A Place to Belong",
+    "now": "A Place to Belong",
+    "kind": "text"
+   },
+   {
+    "n": 19,
+    "label": "Box words: A Place to Belong",
+    "now": "You're not just a visitor, you're family.",
+    "kind": "text"
+   },
+   {
+    "n": 20,
+    "label": "Heading above the \u201cI\u2019m coming\u201d form",
+    "now": "Let us know you're coming",
+    "kind": "text"
+   },
+   {
+    "n": 21,
+    "label": "Form button",
+    "now": "Send",
+    "kind": "text"
+   }
+  ],
+  "size": [
+   1000,
+   1604
+  ]
+ },
+ {
+  "slug": "4-ministries",
+  "title": "Ministries",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Small gold word at the top",
+    "now": "OUR MINISTRIES",
+    "kind": "text"
+   },
+   {
+    "n": 2,
+    "label": "Big headline",
+    "now": "There's a Place for You Here",
+    "kind": "text"
+   },
+   {
+    "n": 3,
+    "label": "Text under the headline",
+    "now": "From Sunday morning prayer to midweek Bible study, our ministries are where the Word is taught and lives are changed.",
+    "kind": "text"
+   },
+   {
+    "n": 4,
+    "label": "Small gold label on the big box",
+    "now": "YOUTH MINISTRY",
+    "kind": "text"
+   },
+   {
+    "n": 5,
+    "label": "Big box headline",
+    "now": "Raising a Generation That Won't Bow!",
+    "kind": "text"
+   },
+   {
+    "n": 6,
+    "label": "Line under the headline",
+    "now": "Carriers of the Glory \u00b7 Sons & Daughters of Glory",
+    "kind": "text"
+   },
+   {
+    "n": 7,
+    "label": "Big box paragraph",
+    "now": "Our youth ministry is where the Word is taught and children are truly taught \u2014 young people learning to serve the Lord, stand on His Word, and carry His glory into their schools, homes, and future. If you're looking for a ministry where your children will be taught the Word, this one is for you. All children and youth are welcome!",
+    "kind": "text"
+   },
+   {
+    "n": 8,
+    "label": "Youth ministry photo",
+    "now": "Youth group photo",
+    "kind": "photo"
+   },
+   {
+    "n": 9,
+    "label": "Box title (left)",
+    "now": "Sunday Morning Prayer",
+    "kind": "text"
+   },
+   {
+    "n": 10,
+    "label": "Day and time (left)",
+    "now": "Sundays \u00b7 9:30 AM",
+    "kind": "text"
+   },
+   {
+    "n": 11,
+    "label": "Box paragraph (left)",
+    "now": "Prayer on Sunday mornings at TAGT is a time of intercession, warfare, worship, and the manifested presence of God \u2014 voices praying, worshipping, and exalting the Lord together. Join us every Sunday at 9:30 AM and pray with us.",
+    "kind": "text"
+   },
+   {
+    "n": 12,
+    "label": "Hashtag (left)",
+    "now": "#PrayWithoutCeasing",
+    "kind": "text"
+   },
+   {
+    "n": 13,
+    "label": "Box title (right)",
+    "now": "Bible Study",
+    "kind": "text"
+   },
+   {
+    "n": 14,
+    "label": "Day and time (right)",
+    "now": "Wednesdays \u00b7 7:00 PM",
+    "kind": "text"
+   },
+   {
+    "n": 15,
+    "label": "Box paragraph (right)",
+    "now": "Grow deeper in the Word with us every Wednesday evening at 7:00 PM. Bring your Bible, bring your questions, and bring a friend.",
+    "kind": "text"
+   },
+   {
+    "n": 16,
+    "label": "More ministry boxes to add",
+    "now": "[Needs your words] (WOG, MOG, One Sound, One Accord, and others you want shown)",
+    "kind": "text"
+   }
+  ],
+  "size": [
+   1000,
+   1150
+  ]
+ },
+ {
+  "slug": "5-teachings",
+  "title": "Teachings (watch live and past messages)",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Small gold word at the top",
+    "now": "WATCH LIVE",
+    "kind": "text"
+   },
+   {
+    "n": 2,
+    "label": "Big headline",
+    "now": "Join Us Online",
+    "kind": "text"
+   },
+   {
+    "n": 3,
+    "label": "Text under the headline",
+    "now": "Experience powerful worship, biblical teaching, and a community of believers \u2014 wherever you are.",
+    "kind": "text"
+   },
+   {
+    "n": 4,
+    "label": "Gold button",
+    "now": "Watch Live Now",
+    "kind": "text"
+   },
+   {
+    "n": 5,
+    "label": "Message shown when we are NOT live",
+    "now": "We're not live right now. Catch up on a recent message below.",
+    "kind": "text"
+   },
+   {
+    "n": 6,
+    "label": "Heading",
+    "now": "Featured Teaching",
+    "kind": "text"
+   },
+   {
+    "n": 7,
+    "label": "Small gold label",
+    "now": "LATEST MESSAGE",
+    "kind": "text"
+   },
+   {
+    "n": 8,
+    "label": "Button",
+    "now": "Watch Now",
+    "kind": "text"
+   },
+   {
+    "n": 9,
+    "label": "Heading for past messages",
+    "now": "Sermon Archive",
+    "kind": "text"
+   },
+   {
+    "n": 10,
+    "label": "Link words",
+    "now": "View All Messages",
+    "kind": "text"
+   },
+   {
+    "n": 11,
+    "label": "Group name 1",
+    "now": "Recent Messages",
+    "kind": "text"
+   },
+   {
+    "n": 12,
+    "label": "Group name 2",
+    "now": "Bible Study",
+    "kind": "text"
+   },
+   {
+    "n": 13,
+    "label": "Group name 3",
+    "now": "Special Services",
+    "kind": "text"
+   },
+   {
+    "n": 14,
+    "label": "Group name 4",
+    "now": "Series",
+    "kind": "text"
+   }
+  ],
+  "size": [
+   1000,
+   1016
+  ]
+ },
+ {
+  "slug": "6-events",
+  "title": "Events",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Small gold word at the top",
+    "now": "EVENTS & CALENDAR",
+    "kind": "text"
+   },
+   {
+    "n": 2,
+    "label": "Big headline",
+    "now": "What's Happening at TAGT",
+    "kind": "text"
+   },
+   {
+    "n": 3,
+    "label": "Text under the headline",
+    "now": "Stay connected and be a part of what God is doing in and through our church family.",
+    "kind": "text"
+   },
+   {
+    "n": 4,
+    "label": "Big picture at the top of the page",
+    "now": "Church family laughing together",
+    "kind": "photo"
+   },
+   {
+    "n": 5,
+    "label": "Heading above the calendar",
+    "now": "Upcoming Events",
+    "kind": "text"
+   },
+   {
+    "n": 6,
+    "label": "Heading above the list",
+    "now": "Event Details",
+    "kind": "text"
+   },
+   {
+    "n": 7,
+    "label": "Sign-up button on events that need sign-ups",
+    "now": "Sign Up",
+    "kind": "text"
+   },
+   {
+    "n": 8,
+    "label": "Message when no events are scheduled",
+    "now": "No events are scheduled right now. Check back soon.",
+    "kind": "text"
+   }
+  ],
+  "size": [
+   1000,
+   812
+  ]
+ },
+ {
+  "slug": "7-prayer-requests",
+  "title": "Prayer Requests",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Small gold word at the top",
+    "now": "PRAYER REQUESTS",
+    "kind": "text"
+   },
+   {
+    "n": 2,
+    "label": "Headline",
+    "now": "How Can We Pray With You?",
+    "kind": "text"
+   },
+   {
+    "n": 3,
+    "label": "Paragraph",
+    "now": "We believe in the power of prayer. Whatever you're facing, you don't have to face it alone \u2014 our prayer team would be honored to stand with you in prayer.",
+    "kind": "text"
+   },
+   {
+    "n": 4,
+    "label": "Scripture",
+    "now": "\u201cTherefore I say unto you, What things soever ye desire, when ye pray, believe that ye receive them, and ye shall have them.\u201d",
+    "kind": "text"
+   },
+   {
+    "n": 5,
+    "label": "Scripture reference",
+    "now": "MARK 11:24",
+    "kind": "text"
+   },
+   {
+    "n": 6,
+    "label": "Form: name box label",
+    "now": "Your name",
+    "kind": "text"
+   },
+   {
+    "n": 7,
+    "label": "Form: email or phone box label",
+    "now": "Email or phone (so the team can follow up)",
+    "kind": "text"
+   },
+   {
+    "n": 8,
+    "label": "Form: request box label",
+    "now": "Your prayer request",
+    "kind": "text"
+   },
+   {
+    "n": 9,
+    "label": "Question about who can see it",
+    "now": "Who may see this request?  \u25cb Pastors only   \u25cb Prayer team   \u25cb Share on the prayer wall",
+    "kind": "text"
+   },
+   {
+    "n": 10,
+    "label": "Form button",
+    "now": "Submit Your Request",
+    "kind": "text"
+   }
+  ],
+  "size": [
+   1000,
+   791
+  ]
+ },
+ {
+  "slug": "8-give",
+  "title": "Give",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Small gold word at the top",
+    "now": "GIVE",
+    "kind": "text"
+   },
+   {
+    "n": 2,
+    "label": "Big headline",
+    "now": "Partner With Us",
+    "kind": "text"
+   },
+   {
+    "n": 3,
+    "label": "First paragraph",
+    "now": "Your giving helps us reach the lost for Jesus Christ and train up disciples in the demonstration of the Spirit and power.",
+    "kind": "text"
+   },
+   {
+    "n": 4,
+    "label": "Second paragraph",
+    "now": "Thank you for sowing into what God is doing at The Abiding Glory Tabernacle.",
+    "kind": "text"
+   },
+   {
+    "n": 5,
+    "label": "Picture at the top of the page",
+    "now": "Hands raised in worship",
+    "kind": "photo"
+   },
+   {
+    "n": 6,
+    "label": "Heading above the ways to give",
+    "now": "Ways to Give",
+    "kind": "text"
+   },
+   {
+    "n": 7,
+    "label": "Box title: Give Online",
+    "now": "Give Online",
+    "kind": "text"
+   },
+   {
+    "n": 8,
+    "label": "Box words: Give Online",
+    "now": "Quick, secure, and easy.",
+    "kind": "text"
+   },
+   {
+    "n": 9,
+    "label": "Box title: Text to Give",
+    "now": "Text to Give",
+    "kind": "text"
+   },
+   {
+    "n": 10,
+    "label": "Box words: Text to Give",
+    "now": "Give from anywhere.",
+    "kind": "text"
+   },
+   {
+    "n": 11,
+    "label": "Box title: Cash App",
+    "now": "Cash App",
+    "kind": "text"
+   },
+   {
+    "n": 12,
+    "label": "Box words: Cash App",
+    "now": "[Needs your words] (your Cash App name)",
+    "kind": "text"
+   },
+   {
+    "n": 13,
+    "label": "Box title: In Person or By Mail",
+    "now": "In Person or By Mail",
+    "kind": "text"
+   },
+   {
+    "n": 14,
+    "label": "Box words: In Person or By Mail",
+    "now": "[Needs your words] (how to give at service or mail a check)",
+    "kind": "text"
+   },
+   {
+    "n": 15,
+    "label": "Line about giving receipts",
+    "now": "[Needs your words] (one line about receipts and year-end giving statements)",
+    "kind": "text"
+   }
+  ],
+  "size": [
+   1000,
+   917
+  ]
+ }
+]
