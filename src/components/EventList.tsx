@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Icon } from "./Icons";
 import type { Occurrence } from "@/lib/services";
 
@@ -16,13 +17,17 @@ export function EventList({ items }: { items: Occurrence[] }) {
       {items.map((e) => {
         const p = parts(e.date);
         return (
-          <li key={e.id} className="flex items-center gap-4 rounded-2xl border border-cream-line bg-cream-card p-4">
+          <li key={e.id} className="relative flex items-center gap-4 rounded-2xl border border-cream-line bg-cream-card p-4 transition has-[a:hover]:border-gold">
             <div className="w-14 shrink-0 rounded-xl border border-cream-line bg-white py-1.5 text-center">
               <div className="text-[10px] font-bold tracking-[0.12em] text-gold-ink">{p.mon}</div>
               <div className="font-serif text-2xl font-semibold leading-none text-purple-800 tabular-nums">{p.day}</div>
             </div>
             <div className="min-w-0 flex-1">
-              <h3 className="font-serif text-lg font-semibold text-purple-800">{e.title}</h3>
+              <h3 className="font-serif text-lg font-semibold text-purple-800">
+                <Link href={`/events/${e.slug}`} className="after:absolute after:inset-0 hover:underline">
+                  {e.title}
+                </Link>
+              </h3>
               <p className="text-sm text-sub">
                 {p.weekday} · {e.time}
               </p>

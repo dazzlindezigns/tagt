@@ -42,3 +42,55 @@ export async function submitPrayer(_: FormState, form: FormData): Promise<FormSt
   console.info("[prayer form, not stored yet]", { visibility: data.visibility, at: new Date().toISOString() });
   redirect("/prayer/thanks");
 }
+
+export async function submitMinistry(_: FormState, form: FormData): Promise<FormState> {
+  const ministry = clean(form.get("ministry"), 60);
+  if (clean(form.get("website"))) redirect(`/ministries/thanks?m=${encodeURIComponent(ministry)}`);
+  const data = {
+    ministry,
+    name: clean(form.get("name"), 120),
+    email: clean(form.get("email"), 200),
+    phone: clean(form.get("phone"), 40),
+    note: clean(form.get("note")),
+  };
+  if (!data.name) return { error: "Please tell us your name.", values: data };
+  if (!data.email && !data.phone) return { error: "Please add an email or phone number so the leaders can reach you.", values: data };
+  console.info("[ministry form, not stored yet]", { ministry: data.ministry, at: new Date().toISOString() });
+  redirect(`/ministries/thanks?m=${encodeURIComponent(ministry)}`);
+}
+
+export type GiveState = FormState & { notConnected?: boolean };
+
+export async function submitGift(_: GiveState, form: FormData): Promise<GiveState> {
+  const { list } = await import("@/lib/content");
+  const { startCheckout } = await import("@/lib/giving");
+  const funds = list("20-give-online", 6);
+  const frequencies = list("20-give-online", 8);
+  const raw = clean(form.get("amount"), 12).replace(/[$,\s]/g, "");
+  const amount = Number(raw);
+  const values = {
+    amount: raw,
+    fund: clean(form.get("fund"), 80),
+    frequency: clean(form.get("frequency"), 40),
+    coverFee: form.get("coverFee") ? "on" : "",
+    name: clean(form.get("name"), 120),
+    email: clean(form.get("email"), 200),
+  };
+  if (!Number.isFinite(amount) || amount < 1) return { error: "Please enter an amount of at least $1.", values };
+  if (amount > 25000) return { error: "For gifts over $25,000, please contact the church office.", values };
+  if (!funds.includes(values.fund)) return { error: "Please choose where your gift goes.", values };
+  if (!frequencies.includes(values.frequency)) return { error: "Please choose how often to give.", values };
+  if (!values.name) return { error: "Please tell us your name for your giving receipt.", values };
+  if (!/^\S+@\S+\.\S+$/.test(values.email)) return { error: "Please enter an email for your receipt.", values };
+
+  const url = await startCheckout({
+    amountCents: Math.round(amount * 100),
+    fund: values.fund,
+    frequency: values.frequency,
+    coverFee: !!values.coverFee,
+    name: values.name,
+    email: values.email,
+  });
+  if (!url) return { notConnected: true, values };
+  redirect(url);
+}

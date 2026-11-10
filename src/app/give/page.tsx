@@ -6,14 +6,14 @@ import { Headline } from "@/components/Headline";
 import { ButtonLink } from "@/components/Button";
 import { Icon, type IconName } from "@/components/Icons";
 import { isMissing, text } from "@/lib/content";
-import { hrefFrom, site } from "@/lib/site";
+import { hrefFrom } from "@/lib/site";
 
 const P = "8-give" as const;
 const E = "0-every-page" as const;
 export const metadata: Metadata = { title: text(P, 2), description: text(P, 3) };
 
 const WAYS: { title: number; body: number; icon: IconName; href?: () => string }[] = [
-  { title: 7, body: 8, icon: "card", href: () => site.giveUrl },
+  { title: 7, body: 8, icon: "card", href: () => "/give/online" },
   { title: 9, body: 10, icon: "phone" },
   { title: 11, body: 12, icon: "cash" },
   { title: 13, body: 14, icon: "envelope" },
@@ -30,7 +30,7 @@ export default function Give() {
         <T page={P} n={3} as="p" className="max-w-[50ch] text-lg text-white/85" />
         <T page={P} n={4} as="p" className="max-w-[50ch] text-white/75" />
         <div className="mt-2 flex flex-wrap gap-3">
-          <ButtonLink href={site.giveUrl || "#ways"} external={!!site.giveUrl}>
+          <ButtonLink href="/give/online">
             <T page={P} n={16} />
           </ButtonLink>
           <ButtonLink href="#ways" variant="outline-light">
@@ -59,9 +59,9 @@ export default function Give() {
               return (
                 <li key={w.title}>
                   {href ? (
-                    <a href={href} target="_blank" rel="noopener noreferrer" className={`${cls} transition hover:border-gold`}>
+                    <Link href={href} className={`${cls} transition hover:border-gold`}>
                       {inner}
-                    </a>
+                    </Link>
                   ) : (
                     <div className={cls}>{inner}</div>
                   )}

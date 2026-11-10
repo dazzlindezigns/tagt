@@ -5,8 +5,9 @@ import { ButtonLink } from "@/components/Button";
 import { EventList } from "@/components/EventList";
 import { VideoBlock } from "@/components/VideoBlock";
 import { upcoming } from "@/lib/services";
-import { site } from "@/lib/site";
 import { text } from "@/lib/content";
+import { IconCard } from "@/components/IconCard";
+import { ABOUT_PAGES } from "@/lib/about";
 
 const P = "1-home" as const;
 export const revalidate = 3600;
@@ -48,6 +49,22 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-site px-gutter pb-16 md:pb-20">
+        <T page={P} n={13} as="h2" className="h-section mb-6 text-center" />
+        <div className="grid gap-4 md:grid-cols-3">
+          {ABOUT_PAGES.map((p, i) => (
+            <IconCard
+              key={p.slug}
+              page="2-about"
+              title={p.title}
+              body={p.line}
+              icon={p.icon}
+              link={{ href: `/about/${p.slug}`, page: P, n: 14, numbered: i === 0 }}
+            />
+          ))}
+        </div>
+      </section>
+
       <section className="bg-gradient-to-br from-purple-950 to-purple-800 text-white">
         <div className="mx-auto flex max-w-site flex-col items-start gap-5 px-gutter py-16 md:flex-row md:items-center md:justify-between md:py-20">
           <div className="flex max-w-[620px] flex-col gap-3">
@@ -57,7 +74,7 @@ export default function Home() {
             <T page={P} n={10} as="h2" className="font-serif text-[clamp(1.9rem,3.5vw,2.8rem)] font-semibold leading-tight" />
             <T page={P} n={11} as="p" className="text-lg text-white/85" />
           </div>
-          <ButtonLink href={site.giveUrl || "/give"} external={!!site.giveUrl}>
+          <ButtonLink href="/give/online">
             <T page={P} n={12} />
           </ButtonLink>
         </div>

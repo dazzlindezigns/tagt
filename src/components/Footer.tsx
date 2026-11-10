@@ -67,6 +67,14 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-site flex-wrap justify-between gap-2 px-gutter py-5 text-xs text-white/60">
           <span>© {new Date().getFullYear()} {text(P, 23)}</span>
+          <span className="flex gap-5">
+            <Link href="/privacy" className="hover:text-white">
+              <T page={P} n={34} />
+            </Link>
+            <Link href="/terms" className="hover:text-white">
+              <T page={P} n={35} />
+            </Link>
+          </span>
         </div>
       </div>
     </footer>

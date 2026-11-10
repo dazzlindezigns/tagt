@@ -26,6 +26,11 @@ for (const { slug, path } of SHEET_PAGES) {
   await page.evaluate(() => document.fonts.ready);
   // Sticky header would repeat over content in a full-page shot.
   await page.addStyleTag({ content: "header{position:relative!important} iframe{visibility:hidden}" });
+  // The "Every page" picture shows the Ministries drop-down open, so its first item gets a number too.
+  if (slug === "0-every-page") {
+    await page.click('button[aria-controls="menu-ministries"]');
+    await page.waitForSelector("#menu-ministries");
+  }
 
   const found = await page.evaluate((slug) => {
     const marks = [];

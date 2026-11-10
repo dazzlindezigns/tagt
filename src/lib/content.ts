@@ -5,16 +5,8 @@ import seed from "@content/sheet-seed.json";
  * Today this reads /content/sheet-seed.json. When Supabase is connected, `site_content`
  * rows override it (same page + number keys), and scripts/import-content writes there.
  */
-export type PageSlug =
-  | "0-every-page"
-  | "1-home"
-  | "2-about"
-  | "3-visit-us"
-  | "4-ministries"
-  | "5-teachings"
-  | "6-events"
-  | "7-prayer-requests"
-  | "8-give";
+/** A content-sheet section key, e.g. "3-visit-us". */
+export type PageSlug = string;
 
 export type SheetRow = { n: number; label: string; now: string; kind: "text" | "photo" };
 type SheetPage = { slug: string; title: string; rows: SheetRow[] };
@@ -39,6 +31,15 @@ export function isMissing(page: PageSlug, n: number): boolean {
 /** The current words for a row, or "" when missing. */
 export function text(page: PageSlug, n: number): string {
   return isMissing(page, n) ? "" : row(page, n).now;
+}
+
+/** Splits a comma-separated row (e.g. fund names) into a list. */
+export function list(page: PageSlug, n: number): string[] {
+  return text(page, n).split(",").map((s) => s.trim()).filter(Boolean);
+}
+
+export function hasRow(page: PageSlug, n: number): boolean {
+  return !!pages.get(page)?.get(n);
 }
 
 export function allRows(): { slug: string; title: string; rows: SheetRow[] }[] {

@@ -3,6 +3,8 @@ import { text } from "./content";
 /** The three weekly services. Wording comes from the "Every page" section of the content sheet. */
 export type Service = {
   key: "prayer" | "worship" | "bible";
+  slug: string; // event page address: /events/<slug>
+  minutes: number; // how long it usually runs, for calendar files
   rows: { day: number; name: number; time: number; line: number };
   weekday: number; // 0 = Sunday
   hour: number;
@@ -11,9 +13,9 @@ export type Service = {
 };
 
 export const SERVICES: Service[] = [
-  { key: "prayer", rows: { day: 11, name: 12, time: 13, line: 14 }, weekday: 0, hour: 9, minute: 30, icon: "pray" },
-  { key: "worship", rows: { day: 15, name: 16, time: 17, line: 18 }, weekday: 0, hour: 10, minute: 30, icon: "people" },
-  { key: "bible", rows: { day: 19, name: 20, time: 21, line: 22 }, weekday: 3, hour: 19, minute: 0, icon: "book" },
+  { key: "prayer", slug: "sunday-morning-prayer", minutes: 60, rows: { day: 11, name: 12, time: 13, line: 14 }, weekday: 0, hour: 9, minute: 30, icon: "pray" },
+  { key: "worship", slug: "sunday-worship-service", minutes: 120, rows: { day: 15, name: 16, time: 17, line: 18 }, weekday: 0, hour: 10, minute: 30, icon: "people" },
+  { key: "bible", slug: "wednesday-bible-study", minutes: 90, rows: { day: 19, name: 20, time: 21, line: 22 }, weekday: 3, hour: 19, minute: 0, icon: "book" },
 ];
 
 export type Occurrence = {
@@ -23,6 +25,7 @@ export type Occurrence = {
   time: string;
   line: string;
   kind: Service["key"];
+  slug: string;
 };
 
 /** Today's date in Austin as YYYY-MM-DD. */
@@ -50,6 +53,7 @@ export function occurrences(fromIso: string, toIso: string): Occurrence[] {
         time: text("0-every-page", s.rows.time),
         line: text("0-every-page", s.rows.line),
         kind: s.key,
+        slug: s.slug,
       });
     }
   }
@@ -59,4 +63,12 @@ export function occurrences(fromIso: string, toIso: string): Occurrence[] {
 export function upcoming(count: number, now = new Date()): Occurrence[] {
   const today = austinToday(now);
   return occurrences(today, addDays(today, 21)).slice(0, count);
+}
+
+export const findService = (slug: string) => SERVICES.find((s) => s.slug === slug);
+
+/** The next dates for one service. */
+export function nextDates(service: Service, count: number, now = new Date()): Occurrence[] {
+  const today = austinToday(now);
+  return occurrences(today, addDays(today, count * 7 + 7)).filter((o) => o.kind === service.key).slice(0, count);
 }

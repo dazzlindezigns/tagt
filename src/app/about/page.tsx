@@ -5,6 +5,7 @@ import { Headline } from "@/components/Headline";
 import { ButtonLink } from "@/components/Button";
 import { IconCard } from "@/components/IconCard";
 import { text } from "@/lib/content";
+import { ABOUT_PAGES } from "@/lib/about";
 
 const P = "2-about" as const;
 export const metadata: Metadata = { title: text(P, 2), description: text(P, 7) };
@@ -36,9 +37,17 @@ export default function About() {
 
       <section className="mx-auto max-w-site px-gutter pb-20">
         <div className="grid gap-4 md:grid-cols-3">
-          <IconCard id="beliefs" page={P} title={10} body={11} icon="book" />
-          <IconCard id="mission" page={P} title={12} body={13} icon="people" />
-          <IconCard id="heart" page={P} title={14} body={15} icon="heart" />
+          {ABOUT_PAGES.map((p, i) => (
+            <IconCard
+              key={p.slug}
+              id={p.slug}
+              page={P}
+              title={p.title}
+              body={p.line}
+              icon={p.icon}
+              link={{ href: `/about/${p.slug}`, page: P, n: 16, numbered: i === 0 }}
+            />
+          ))}
         </div>
       </section>
     </>

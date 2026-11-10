@@ -9,5 +9,17 @@ export const SHEET_PAGES = [
   { slug: "6-events", path: "/events" },
   { slug: "7-prayer-requests", path: "/prayer" },
   { slug: "8-give", path: "/give" },
+  { slug: "9-our-beliefs", path: "/about/beliefs" },
+  { slug: "10-our-mission", path: "/about/mission" },
+  { slug: "11-our-heart", path: "/about/heart" },
+  { slug: "12-ministry-youth", path: "/ministries/youth" },
+  { slug: "13-ministry-prayer", path: "/ministries/prayer" },
+  { slug: "14-ministry-bible-study", path: "/ministries/bible-study" },
+  { slug: "15-ministry-women", path: "/ministries/women-of-glory" },
+  { slug: "16-ministry-men", path: "/ministries/men-of-glory" },
+  { slug: "17-ministry-one-sound", path: "/ministries/one-sound" },
+  { slug: "18-ministry-one-accord", path: "/ministries/one-accord" },
+  { slug: "19-event-page", path: "/events/sunday-worship-service" },
+  { slug: "20-give-online", path: "/give/online" },
 ];
 export const BASE_URL = process.env.BASE_URL || "http://localhost:3000";

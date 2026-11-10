@@ -32,6 +32,18 @@ PAGES = {
     "6-events": ("Events", "The church calendar and what's coming up."),
     "7-prayer-requests": ("Prayer Requests", "Where people send a prayer request and choose who can see it."),
     "8-give": ("Give", "Ways to give, and how to reach the church."),
+    "9-our-beliefs": ("About: Our Beliefs", "The full Our Beliefs page. The title and short line at the top come from the About section (#10 and #11), so change them there."),
+    "10-our-mission": ("About: Our Mission", "The full Our Mission page. The title and short line at the top come from the About section (#12 and #13), so change them there."),
+    "11-our-heart": ("About: Our Heart", "The full Our Heart page. The title and short line at the top come from the About section (#14 and #15), so change them there."),
+    "12-ministry-youth": ("Ministry: Youth", "The Youth Ministry page. The ministry's name here is also what shows in the Ministries menu."),
+    "13-ministry-prayer": ("Ministry: Sunday Morning Prayer", "The Sunday Morning Prayer page."),
+    "14-ministry-bible-study": ("Ministry: Bible Study", "The Bible Study page."),
+    "15-ministry-women": ("Ministry: Women of Glory", "The Women of Glory page. Parts that say [Needs your words] stay hidden on the website until you fill them in."),
+    "16-ministry-men": ("Ministry: Men of Glory", "The Men of Glory page."),
+    "17-ministry-one-sound": ("Ministry: One Sound", "The One Sound (sound and media team) page."),
+    "18-ministry-one-accord": ("Ministry: One Accord", "The One Accord (worship team) page."),
+    "19-event-page": ("Event page", "Every event has its own page. This section holds the words that are the same on every event page. The event's name, day, and time come from the \u201cEvery page\u201d section. The picture shows the Worship Service page."),
+    "20-give-online": ("Give Online (giving form)", "The online giving form. Tell us if the list of funds or the how-often choices should change."),
 }
 
 seed = {p["slug"]: {r["n"]: r for r in p["rows"]} for p in json.loads((ROOT / "content/sheet-seed.json").read_text())}

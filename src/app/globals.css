@@ -61,3 +61,12 @@ html.sheet-mode [data-sheet-hidden] {
 html.sheet-mode .header-alt[data-sheet-hidden] {
   position: absolute; right: clamp(16px, 4vw, 40px); top: calc(100% + 10px); margin: 0; padding: 4px; z-index: 50;
 }
+
+/* Privacy Policy and Terms pages */
+.legal { @apply text-[17px] leading-relaxed text-ink/90; }
+.legal .lead { @apply mb-8 text-lg text-ink; }
+.legal h2 { @apply mb-3 mt-10 font-serif text-2xl font-semibold text-purple-800; }
+.legal h3 { @apply mb-2 mt-6 font-semibold text-purple-800; }
+.legal p { @apply mb-4 max-w-[68ch]; }
+.legal ul { @apply mb-4 ml-6 list-disc space-y-1.5 max-w-[66ch]; }
+.legal a { @apply font-medium text-purple-800 underline underline-offset-2; }

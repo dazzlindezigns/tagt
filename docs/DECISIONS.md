@@ -45,6 +45,16 @@ Recurring givers already have to re-enroll once (ShelbyNext → new system). If 
 - Replaced wording that's no longer on those pages: "Planning Your First Visit?", "There's a Place for You Here", "From Sunday morning prayer to midweek Bible study, our ministries are where the Word is taught and lives are changed." The Give page's "Your giving helps us reach the lost for Jesus Christ…" still appears on the Home page giving section.
 - New rows were added at the end of each section. Existing numbers did not change.
 
+## New pages (Nov 10)
+
+- **About sub-pages** (`/about/beliefs`, `/about/mission`, `/about/heart`): the title and short line come from About #10–15. The main text on each is **[Needs your words]**, so on the live site those pages show only the top section and a button until it's filled in. **Our Beliefs must be written by the pastors and grounded in Scripture.** I did not write it.
+- **Home "Get to Know Us" section:** three boxes linking to those pages (Home #13–14). The heading "Get to Know Us" is new wording, editable in the sheet.
+- **Ministry pages** for the 7 ministries named in the sheet: Youth, Sunday Morning Prayer, Bible Study, Women of Glory, Men of Glory, One Sound, One Accord. Each has its own sheet section (#12–#18 sections). Missing parts stay hidden. Each page has a "Get Involved" form (not stored yet, like the other forms). Other teams from the build prompt (Beautification, Leadership, Prayer Team, Children's, Hospitality) aren't shown until you say so.
+- **Event pages** for the three weekly services, with an "Add to My Calendar" file (repeats weekly, Austin time). Events posted from the admin will use the same page.
+- **Give Online form** (`/give/online`): amount, fund, how often, name, email, cover-the-fee. **Not connected to any payment company** (Q1 still open). Submitting shows "Online giving here opens January 1, 2027" and the ShelbyNext link once `NEXT_PUBLIC_GIVE_URL` is set. The fund list comes from the build prompt (Tithes, Offerings, Building Fund, Missions, Benevolence). The team should confirm it.
+- **Privacy Policy and Terms & Conditions** written by Claude. **Not legal advice: have your treasurer or an attorney review before launch.** Things to confirm: the church's legal name, the giving refund wording, and that the prayer wall will show first names only (the policy promises that, so the prayer wall must be built that way). The text-message section uses the wording 10DLC carriers look for.
+- **Header:** About and Ministries now have drop-down menus. On phones they show as indented links in the menu.
+
 ## Decisions made (change any of these if you disagree)
 
 | # | Decision | Why |

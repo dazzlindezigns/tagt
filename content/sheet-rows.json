@@ -194,6 +194,18 @@
     "label": "Top right button on the Teachings page",
     "kind": "text",
     "now": "Watch Live"
+   },
+   {
+    "n": 34,
+    "label": "Footer: link words 3",
+    "kind": "text",
+    "now": "Privacy Policy"
+   },
+   {
+    "n": 35,
+    "label": "Footer: link words 4",
+    "kind": "text",
+    "now": "Terms & Conditions"
    }
   ]
  },
@@ -272,6 +284,18 @@
     "label": "Giving button",
     "kind": "text",
     "now": "Give Online"
+   },
+   {
+    "n": 13,
+    "label": "Heading above the three “Learn More” boxes",
+    "kind": "text",
+    "now": "Get to Know Us"
+   },
+   {
+    "n": 14,
+    "label": "Link words on each box",
+    "kind": "text",
+    "now": "Learn More"
    }
   ]
  },
@@ -368,6 +392,12 @@
     "label": "Box words: Our Heart",
     "kind": "text",
     "now": "A place for real people, real faith, real impact."
+   },
+   {
+    "n": 16,
+    "label": "Link words on each box",
+    "kind": "text",
+    "now": "Learn More"
    }
   ]
  },
@@ -605,9 +635,15 @@
    },
    {
     "n": 16,
-    "label": "More ministry boxes to add",
+    "label": "More ministry boxes",
     "kind": "text",
-    "now": "[Needs your words] (WOG, MOG, One Sound, One Accord, and others you want shown)"
+    "now": "[Needs your words] (any other ministries you want shown. Women of Glory, Men of Glory, One Sound, and One Accord now have their own sections in this sheet.)"
+   },
+   {
+    "n": 17,
+    "label": "Link words on each box",
+    "kind": "text",
+    "now": "Learn More"
    }
   ]
  },
@@ -926,6 +962,606 @@
     "label": "Outline button in the top picture",
     "kind": "text",
     "now": "Other Ways to Give"
+   }
+  ]
+ },
+ {
+  "slug": "9-our-beliefs",
+  "path": "/about/beliefs",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Big picture at the top of the page",
+    "kind": "photo",
+    "now": "An open Bible"
+   },
+   {
+    "n": 2,
+    "label": "Main text",
+    "kind": "text",
+    "now": "[Needs your words] (the statement of faith, written by the pastors, with a Scripture reference for each belief)"
+   },
+   {
+    "n": 3,
+    "label": "Button",
+    "kind": "text",
+    "now": "Plan Your Visit"
+   }
+  ]
+ },
+ {
+  "slug": "10-our-mission",
+  "path": "/about/mission",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Big picture at the top of the page",
+    "kind": "photo",
+    "now": "The church gathered in worship"
+   },
+   {
+    "n": 2,
+    "label": "Main text",
+    "kind": "text",
+    "now": "[Needs your words] (the full mission statement and what it looks like at TAGT)"
+   },
+   {
+    "n": 3,
+    "label": "Button",
+    "kind": "text",
+    "now": "Plan Your Visit"
+   }
+  ]
+ },
+ {
+  "slug": "11-our-heart",
+  "path": "/about/heart",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Big picture at the top of the page",
+    "kind": "photo",
+    "now": "Church members serving or praying together"
+   },
+   {
+    "n": 2,
+    "label": "Main text",
+    "kind": "text",
+    "now": "[Needs your words] (what makes TAGT a family, in your own words)"
+   },
+   {
+    "n": 3,
+    "label": "Button",
+    "kind": "text",
+    "now": "Plan Your Visit"
+   }
+  ]
+ },
+ {
+  "slug": "12-ministry-youth",
+  "path": "/ministries/youth",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Ministry name",
+    "kind": "text",
+    "now": "Youth Ministry"
+   },
+   {
+    "n": 2,
+    "label": "Short line under the name",
+    "kind": "text",
+    "now": "Raising a Generation That Won't Bow!"
+   },
+   {
+    "n": 3,
+    "label": "When it meets",
+    "kind": "text",
+    "now": "[Needs your words] (day and time)"
+   },
+   {
+    "n": 4,
+    "label": "Who leads it",
+    "kind": "text",
+    "now": "[Needs your words] (leader names)"
+   },
+   {
+    "n": 5,
+    "label": "Full description",
+    "kind": "text",
+    "now": "Our youth ministry is where the Word is taught and children are truly taught — young people learning to serve the Lord, stand on His Word, and carry His glory into their schools, homes, and future. If you're looking for a ministry where your children will be taught the Word, this one is for you. All children and youth are welcome!"
+   },
+   {
+    "n": 6,
+    "label": "Big picture at the top of the page",
+    "kind": "photo",
+    "now": "Youth group photo"
+   },
+   {
+    "n": 7,
+    "label": "Heading above the sign-up form",
+    "kind": "text",
+    "now": "Get Involved"
+   },
+   {
+    "n": 8,
+    "label": "Form button",
+    "kind": "text",
+    "now": "Send"
+   },
+   {
+    "n": 9,
+    "label": "Extra line under the description",
+    "kind": "text",
+    "now": "Carriers of the Glory · Sons & Daughters of Glory"
+   }
+  ]
+ },
+ {
+  "slug": "13-ministry-prayer",
+  "path": "/ministries/prayer",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Ministry name",
+    "kind": "text",
+    "now": "Sunday Morning Prayer"
+   },
+   {
+    "n": 2,
+    "label": "Short line under the name",
+    "kind": "text",
+    "now": "Intercession, worship, and the manifested presence of God."
+   },
+   {
+    "n": 3,
+    "label": "When it meets",
+    "kind": "text",
+    "now": "Sundays · 9:30 AM"
+   },
+   {
+    "n": 4,
+    "label": "Who leads it",
+    "kind": "text",
+    "now": "[Needs your words] (leader names)"
+   },
+   {
+    "n": 5,
+    "label": "Full description",
+    "kind": "text",
+    "now": "Prayer on Sunday mornings at TAGT is a time of intercession, warfare, worship, and the manifested presence of God — voices praying, worshipping, and exalting the Lord together. Join us every Sunday at 9:30 AM and pray with us."
+   },
+   {
+    "n": 6,
+    "label": "Big picture at the top of the page",
+    "kind": "photo",
+    "now": "Prayer gathering"
+   },
+   {
+    "n": 7,
+    "label": "Heading above the sign-up form",
+    "kind": "text",
+    "now": "Get Involved"
+   },
+   {
+    "n": 8,
+    "label": "Form button",
+    "kind": "text",
+    "now": "Send"
+   },
+   {
+    "n": 9,
+    "label": "Extra line under the description",
+    "kind": "text",
+    "now": "#PrayWithoutCeasing"
+   }
+  ]
+ },
+ {
+  "slug": "14-ministry-bible-study",
+  "path": "/ministries/bible-study",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Ministry name",
+    "kind": "text",
+    "now": "Bible Study"
+   },
+   {
+    "n": 2,
+    "label": "Short line under the name",
+    "kind": "text",
+    "now": "Grow deeper in the Word, midweek."
+   },
+   {
+    "n": 3,
+    "label": "When it meets",
+    "kind": "text",
+    "now": "Wednesdays · 7:00 PM"
+   },
+   {
+    "n": 4,
+    "label": "Who leads it",
+    "kind": "text",
+    "now": "[Needs your words] (leader names)"
+   },
+   {
+    "n": 5,
+    "label": "Full description",
+    "kind": "text",
+    "now": "Grow deeper in the Word with us every Wednesday evening at 7:00 PM. Bring your Bible, bring your questions, and bring a friend."
+   },
+   {
+    "n": 6,
+    "label": "Big picture at the top of the page",
+    "kind": "photo",
+    "now": "Open Bibles at Bible study"
+   },
+   {
+    "n": 7,
+    "label": "Heading above the sign-up form",
+    "kind": "text",
+    "now": "Get Involved"
+   },
+   {
+    "n": 8,
+    "label": "Form button",
+    "kind": "text",
+    "now": "Send"
+   }
+  ]
+ },
+ {
+  "slug": "15-ministry-women",
+  "path": "/ministries/women-of-glory",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Ministry name",
+    "kind": "text",
+    "now": "Women of Glory (WOG)"
+   },
+   {
+    "n": 2,
+    "label": "Short line under the name",
+    "kind": "text",
+    "now": "[Needs your words] (one short line)"
+   },
+   {
+    "n": 3,
+    "label": "When it meets",
+    "kind": "text",
+    "now": "[Needs your words] (day and time)"
+   },
+   {
+    "n": 4,
+    "label": "Who leads it",
+    "kind": "text",
+    "now": "[Needs your words] (leader names)"
+   },
+   {
+    "n": 5,
+    "label": "Full description",
+    "kind": "text",
+    "now": "[Needs your words] (what this ministry is and who it is for)"
+   },
+   {
+    "n": 6,
+    "label": "Big picture at the top of the page",
+    "kind": "photo",
+    "now": "Women of Glory together"
+   },
+   {
+    "n": 7,
+    "label": "Heading above the sign-up form",
+    "kind": "text",
+    "now": "Get Involved"
+   },
+   {
+    "n": 8,
+    "label": "Form button",
+    "kind": "text",
+    "now": "Send"
+   }
+  ]
+ },
+ {
+  "slug": "16-ministry-men",
+  "path": "/ministries/men-of-glory",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Ministry name",
+    "kind": "text",
+    "now": "Men of Glory (MOG)"
+   },
+   {
+    "n": 2,
+    "label": "Short line under the name",
+    "kind": "text",
+    "now": "[Needs your words] (one short line)"
+   },
+   {
+    "n": 3,
+    "label": "When it meets",
+    "kind": "text",
+    "now": "[Needs your words] (day and time)"
+   },
+   {
+    "n": 4,
+    "label": "Who leads it",
+    "kind": "text",
+    "now": "[Needs your words] (leader names)"
+   },
+   {
+    "n": 5,
+    "label": "Full description",
+    "kind": "text",
+    "now": "[Needs your words] (what this ministry is and who it is for)"
+   },
+   {
+    "n": 6,
+    "label": "Big picture at the top of the page",
+    "kind": "photo",
+    "now": "Men of Glory together"
+   },
+   {
+    "n": 7,
+    "label": "Heading above the sign-up form",
+    "kind": "text",
+    "now": "Get Involved"
+   },
+   {
+    "n": 8,
+    "label": "Form button",
+    "kind": "text",
+    "now": "Send"
+   }
+  ]
+ },
+ {
+  "slug": "17-ministry-one-sound",
+  "path": "/ministries/one-sound",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Ministry name",
+    "kind": "text",
+    "now": "One Sound"
+   },
+   {
+    "n": 2,
+    "label": "Short line under the name",
+    "kind": "text",
+    "now": "[Needs your words] (one short line)"
+   },
+   {
+    "n": 3,
+    "label": "When it meets",
+    "kind": "text",
+    "now": "[Needs your words] (when the team serves)"
+   },
+   {
+    "n": 4,
+    "label": "Who leads it",
+    "kind": "text",
+    "now": "[Needs your words] (leader names)"
+   },
+   {
+    "n": 5,
+    "label": "Full description",
+    "kind": "text",
+    "now": "[Needs your words] (what the sound and media team does and how to join)"
+   },
+   {
+    "n": 6,
+    "label": "Big picture at the top of the page",
+    "kind": "photo",
+    "now": "The sound and media team at work"
+   },
+   {
+    "n": 7,
+    "label": "Heading above the sign-up form",
+    "kind": "text",
+    "now": "Get Involved"
+   },
+   {
+    "n": 8,
+    "label": "Form button",
+    "kind": "text",
+    "now": "Send"
+   }
+  ]
+ },
+ {
+  "slug": "18-ministry-one-accord",
+  "path": "/ministries/one-accord",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Ministry name",
+    "kind": "text",
+    "now": "One Accord"
+   },
+   {
+    "n": 2,
+    "label": "Short line under the name",
+    "kind": "text",
+    "now": "[Needs your words] (one short line)"
+   },
+   {
+    "n": 3,
+    "label": "When it meets",
+    "kind": "text",
+    "now": "[Needs your words] (rehearsal day and time)"
+   },
+   {
+    "n": 4,
+    "label": "Who leads it",
+    "kind": "text",
+    "now": "[Needs your words] (leader names)"
+   },
+   {
+    "n": 5,
+    "label": "Full description",
+    "kind": "text",
+    "now": "[Needs your words] (what the worship team does and how to join)"
+   },
+   {
+    "n": 6,
+    "label": "Big picture at the top of the page",
+    "kind": "photo",
+    "now": "The worship team leading worship"
+   },
+   {
+    "n": 7,
+    "label": "Heading above the sign-up form",
+    "kind": "text",
+    "now": "Get Involved"
+   },
+   {
+    "n": 8,
+    "label": "Form button",
+    "kind": "text",
+    "now": "Send"
+   }
+  ]
+ },
+ {
+  "slug": "19-event-page",
+  "path": "/events/sunday-worship-service",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Link back to the calendar",
+    "kind": "text",
+    "now": "All Events"
+   },
+   {
+    "n": 2,
+    "label": "Heading above the next dates",
+    "kind": "text",
+    "now": "Upcoming Dates"
+   },
+   {
+    "n": 3,
+    "label": "Calendar button",
+    "kind": "text",
+    "now": "Add to My Calendar"
+   },
+   {
+    "n": 4,
+    "label": "Heading by the address",
+    "kind": "text",
+    "now": "Location"
+   },
+   {
+    "n": 5,
+    "label": "Button under the address",
+    "kind": "text",
+    "now": "Get Directions"
+   },
+   {
+    "n": 6,
+    "label": "Heading above the sign-up form (only on events that need sign-ups)",
+    "kind": "text",
+    "now": "Sign Up"
+   },
+   {
+    "n": 7,
+    "label": "Sign-up form button",
+    "kind": "text",
+    "now": "Sign Up"
+   },
+   {
+    "n": 8,
+    "label": "Line when an event has no more dates",
+    "kind": "text",
+    "now": "There are no upcoming dates for this event."
+   }
+  ]
+ },
+ {
+  "slug": "20-give-online",
+  "path": "/give/online",
+  "rows": [
+   {
+    "n": 1,
+    "label": "Small gold word at the top",
+    "kind": "text",
+    "now": "GIVE ONLINE"
+   },
+   {
+    "n": 2,
+    "label": "Big headline",
+    "kind": "text",
+    "now": "Give Online"
+   },
+   {
+    "n": 3,
+    "label": "Text under the headline",
+    "kind": "text",
+    "now": "Quick, secure, and easy."
+   },
+   {
+    "n": 4,
+    "label": "Amount label",
+    "kind": "text",
+    "now": "Amount"
+   },
+   {
+    "n": 5,
+    "label": "Fund label",
+    "kind": "text",
+    "now": "Give to"
+   },
+   {
+    "n": 6,
+    "label": "Funds people can choose (separate with commas)",
+    "kind": "text",
+    "now": "Tithes Offerings Building Fund Missions Benevolence"
+   },
+   {
+    "n": 7,
+    "label": "How-often label",
+    "kind": "text",
+    "now": "How often?"
+   },
+   {
+    "n": 8,
+    "label": "How-often choices (separate with commas)",
+    "kind": "text",
+    "now": "One time Every week Every month"
+   },
+   {
+    "n": 9,
+    "label": "Processing fee checkbox",
+    "kind": "text",
+    "now": "Add a little to cover the processing fee"
+   },
+   {
+    "n": 10,
+    "label": "Gold button",
+    "kind": "text",
+    "now": "Continue to Secure Payment"
+   },
+   {
+    "n": 11,
+    "label": "Note under the button",
+    "kind": "text",
+    "now": "You’ll finish on a secure payment page. Your card number never touches our website."
+   },
+   {
+    "n": 12,
+    "label": "Message while online giving is not set up yet",
+    "kind": "text",
+    "now": "Online giving here opens January 1, 2027. Until then, please give through our current giving page."
+   },
+   {
+    "n": 13,
+    "label": "Button in that message",
+    "kind": "text",
+    "now": "Go to Our Giving Page"
    }
   ]
  }
