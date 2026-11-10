@@ -24,6 +24,18 @@ Recurring givers already have to re-enroll once (ShelbyNext → new system). If 
 
 **Q8. Cash App on the Give page.** Cash App gifts won't reach our ledger automatically. Finance would enter them as offline gifts so statements stay complete. Are you OK with that, or should Cash App come off the page in 2027?
 
+## Website build notes (Nov 10)
+
+- **App vs. website:** the pastors are reviewing the app preview. The website is built so the app can be added later without rework. The Member Login link stays hidden until they decide.
+- **Q3 (suite number)** is still open. The site uses the content sheet's address, without "Suite A-102".
+- **Q5 (header logo):** using the full badge at 48 px as a placeholder.
+- **Q6 (header button):** every page uses the sheet's single gold "Plan Your Visit" button (row 10), since the sheet has only one row for it.
+- **Give Online:** links to `NEXT_PUBLIC_GIVE_URL`. Through Dec 31 that should be the ShelbyNext giving page. **We need that link.** Until it's set, the Give Online button is left off the Give page hero and the home page button goes to /give.
+- **Events:** the calendar and lists show the three weekly services from the "Every page" section. Admin-published events join them once the `events` table exists.
+- **Teachings:** shows the "not live" state and a placeholder until `YOUTUBE_CHANNEL_ID` is set.
+- **Words not in the content sheet yet** (add as rows in the next sheet update): Visit form field labels (Name, Email, Phone, How many are coming?, Anything we should know?), both thank-you pages, the 404 page, and the Teachings line "Messages appear here automatically once the church YouTube channel is connected."
+- **Photos:** every photo spot shows the purple striped placeholder with what belongs there, as the team sheet describes.
+
 ## Decisions made (change any of these if you disagree)
 
 | # | Decision | Why |

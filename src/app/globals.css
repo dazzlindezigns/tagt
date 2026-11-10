@@ -1,0 +1,58 @@
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/playfair-display/500.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/playfair-display/700.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 90px; }
+  body { @apply bg-cream font-sans text-ink antialiased; }
+  h1, h2, h3 { text-wrap: balance; }
+  :focus-visible { outline: 2px solid #D9B46C; outline-offset: 3px; border-radius: 4px; }
+}
+
+@layer components {
+  .h-display { @apply font-serif text-[clamp(2.4rem,5.5vw,4rem)] font-semibold leading-[1.05]; }
+  .h-section { @apply font-serif text-[clamp(1.7rem,3vw,2.3rem)] font-semibold leading-tight text-purple-800; }
+  .field-label { @apply text-sm font-semibold text-purple-800; }
+  .field-input { @apply w-full rounded-xl border border-cream-line bg-white px-4 py-3 text-base text-ink placeholder:text-sub/70 focus:border-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-200; }
+
+  /* Photo spots: purple striped boxes until real TAGT photos are uploaded. */
+  .photo-slot {
+    @apply relative overflow-hidden bg-purple-700;
+    background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.07) 0 14px, transparent 14px 28px),
+      radial-gradient(circle at 70% 30%, #6A3A86, #2b0f3f 75%);
+  }
+  .photo-slot-label {
+    @apply absolute bottom-3 right-3 max-w-[80%] rounded-full bg-purple-950/70 px-3 py-1 text-[11px] font-medium text-white/85;
+  }
+  .photo-fade-left .photo-slot-label { @apply bottom-auto top-3; }
+  .photo-fade-left {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 45%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 45%);
+  }
+}
+
+/* Text the team hasn't written yet stays off the live site. The sheet-picture script turns it on. */
+.sheet-missing { display: none !important; }
+html.sheet-mode .sheet-missing {
+  display: inline-block !important;
+  background: #fff5c2; color: #5c4400; border: 1px dashed #c9a227; border-radius: 6px;
+  padding: 2px 8px; font: 500 13px/1.4 Inter, sans-serif; letter-spacing: 0; text-transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
+/* Spots that only appear in certain situations (e.g. the event Sign Up button). Shown in sheet pictures. */
+html.sheet-mode [data-sheet-hidden] {
+  display: inline-block !important; margin: 4px 8px 0 0;
+  background: #f3ecf6; color: #3A0A4A; border: 1px dashed #6A3A86; border-radius: 999px;
+  padding: 4px 12px; font: 600 13px/1.4 Inter, sans-serif;
+}
