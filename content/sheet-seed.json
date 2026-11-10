@@ -188,6 +188,12 @@
     "label": "Footer: link words 2",
     "now": "Plan Your Visit",
     "kind": "text"
+   },
+   {
+    "n": 32,
+    "label": "Top right button on the Teachings page",
+    "now": "Watch Live",
+    "kind": "text"
    }
   ],
   "size": [
@@ -384,13 +390,13 @@
    {
     "n": 1,
     "label": "Small gold word at the top",
-    "now": "VISIT US",
+    "now": "PLAN YOUR VISIT",
     "kind": "text"
    },
    {
     "n": 2,
     "label": "Big headline",
-    "now": "Planning Your First Visit?",
+    "now": "You Belong Here.",
     "kind": "text"
    },
    {
@@ -506,6 +512,12 @@
     "label": "Form button",
     "now": "Send",
     "kind": "text"
+   },
+   {
+    "n": 22,
+    "label": "Line under the headline",
+    "now": "Come as you are \u2014 there\u2019s a place for you.",
+    "kind": "text"
    }
   ],
   "size": [
@@ -526,13 +538,13 @@
    {
     "n": 2,
     "label": "Big headline",
-    "now": "There's a Place for You Here",
+    "now": "Real People. Real Faith. Real Impact.",
     "kind": "text"
    },
    {
     "n": 3,
     "label": "Text under the headline",
-    "now": "From Sunday morning prayer to midweek Bible study, our ministries are where the Word is taught and lives are changed.",
+    "now": "Discover the many ways to grow, serve, and make a difference at The Abiding Glory Tabernacle.",
     "kind": "text"
    },
    {
@@ -848,19 +860,19 @@
    {
     "n": 1,
     "label": "Small gold word at the top",
-    "now": "GIVE",
+    "now": "GIVE & CONNECT",
     "kind": "text"
    },
    {
     "n": 2,
     "label": "Big headline",
-    "now": "Partner With Us",
+    "now": "Partner with Purpose",
     "kind": "text"
    },
    {
     "n": 3,
     "label": "First paragraph",
-    "now": "Your giving helps us reach the lost for Jesus Christ and train up disciples in the demonstration of the Spirit and power.",
+    "now": "Your generosity helps advance the Kingdom and make a lasting impact.",
     "kind": "text"
    },
    {
@@ -933,6 +945,18 @@
     "n": 15,
     "label": "Line about giving receipts",
     "now": "[Needs your words] (one line about receipts and year-end giving statements)",
+    "kind": "text"
+   },
+   {
+    "n": 16,
+    "label": "Gold button in the top picture",
+    "now": "Give Online",
+    "kind": "text"
+   },
+   {
+    "n": 17,
+    "label": "Outline button in the top picture",
+    "now": "Other Ways to Give",
     "kind": "text"
    }
   ],

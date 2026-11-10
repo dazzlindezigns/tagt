@@ -25,6 +25,7 @@ const config: Config = {
           card: "#F9F5EE",
           line: "#EBE0CF",
         },
+        violet: "#6E43C9", // "Watch Live" header button (mockup)
         ink: "#2A1236",
         sub: "#6A5A72",
       },

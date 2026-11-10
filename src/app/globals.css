@@ -56,3 +56,8 @@ html.sheet-mode [data-sheet-hidden] {
   background: #f3ecf6; color: #3A0A4A; border: 1px dashed #6A3A86; border-radius: 999px;
   padding: 4px 12px; font: 600 13px/1.4 Inter, sans-serif;
 }
+
+/* In sheet pictures, the other page's header button floats just under the header instead of crowding it. */
+html.sheet-mode .header-alt[data-sheet-hidden] {
+  position: absolute; right: clamp(16px, 4vw, 40px); top: calc(100% + 10px); margin: 0; padding: 4px; z-index: 50;
+}

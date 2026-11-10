@@ -4,6 +4,7 @@ import { T } from "./Sheet";
 import { MobileMenu } from "./MobileMenu";
 import { NavLink } from "./NavLink";
 import { ButtonLink } from "./Button";
+import { HeaderCta } from "./HeaderCta";
 import { NAV } from "@/lib/nav";
 import { text } from "@/lib/content";
 
@@ -30,9 +31,18 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ButtonLink href="/visit" arrow={false} className="hidden whitespace-nowrap !px-5 !py-2.5 sm:inline-flex">
-            <T page={P} n={10} />
-          </ButtonLink>
+          <HeaderCta
+            normal={
+              <ButtonLink href="/visit" arrow={false} className="whitespace-nowrap !px-5 !py-2.5">
+                <T page={P} n={10} />
+              </ButtonLink>
+            }
+            watch={
+              <ButtonLink href="/teachings#watch" variant="violet" arrow={false} className="whitespace-nowrap !px-5 !py-2.5">
+                <T page={P} n={32} />
+              </ButtonLink>
+            }
+          />
           <MobileMenu>
             <nav aria-label="Main" className="flex flex-col">
               {NAV.map((item) => (

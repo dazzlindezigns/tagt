@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { T } from "@/components/Sheet";
 import { Hero, Eyebrow } from "@/components/Hero";
+import { Headline } from "@/components/Headline";
 import { Calendar } from "@/components/Calendar";
 import { EventList } from "@/components/EventList";
 import { austinToday, occurrences, upcoming } from "@/lib/services";
@@ -26,7 +27,7 @@ export default function Events() {
         <Eyebrow light>
           <T page={P} n={1} />
         </Eyebrow>
-        <T page={P} n={2} as="h1" className="h-display" />
+        <Headline page={P} n={2} />
         <T page={P} n={3} as="p" className="max-w-[50ch] text-lg text-white/85" />
       </Hero>
 

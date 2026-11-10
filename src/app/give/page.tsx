@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { T } from "@/components/Sheet";
 import { Hero, Eyebrow } from "@/components/Hero";
+import { Headline } from "@/components/Headline";
 import { ButtonLink } from "@/components/Button";
 import { Icon, type IconName } from "@/components/Icons";
 import { isMissing, text } from "@/lib/content";
@@ -25,19 +26,20 @@ export default function Give() {
         <Eyebrow light>
           <T page={P} n={1} />
         </Eyebrow>
-        <T page={P} n={2} as="h1" className="h-display" />
+        <Headline page={P} n={2} />
         <T page={P} n={3} as="p" className="max-w-[50ch] text-lg text-white/85" />
         <T page={P} n={4} as="p" className="max-w-[50ch] text-white/75" />
         <div className="mt-2 flex flex-wrap gap-3">
-          {site.giveUrl ? (
-            <ButtonLink href={site.giveUrl} external>
-              {text(P, 7)}
-            </ButtonLink>
-          ) : null}
+          <ButtonLink href={site.giveUrl || "#ways"} external={!!site.giveUrl}>
+            <T page={P} n={16} />
+          </ButtonLink>
+          <ButtonLink href="#ways" variant="outline-light">
+            <T page={P} n={17} />
+          </ButtonLink>
         </div>
       </Hero>
 
-      <section className="mx-auto grid max-w-site gap-10 px-gutter py-14 md:grid-cols-[1.25fr_1fr]">
+      <section id="ways" className="mx-auto grid max-w-site scroll-mt-24 gap-10 px-gutter py-14 md:grid-cols-[1.25fr_1fr]">
         <div className="flex min-w-0 flex-col gap-4">
           <T page={P} n={6} as="h2" className="h-section" />
           <ul className="flex flex-col gap-3">

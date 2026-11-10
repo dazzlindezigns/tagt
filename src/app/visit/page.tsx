@@ -20,6 +20,7 @@ export default function Visit() {
           <T page={P} n={1} />
         </Eyebrow>
         <T page={P} n={2} as="h1" className="h-display" />
+        <T page={P} n={22} as="p" className="max-w-[44ch] text-xl text-white/85" />
       </Hero>
       <ServiceCards />
 

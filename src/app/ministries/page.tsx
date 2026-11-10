@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { T, Photo } from "@/components/Sheet";
 import { Hero, Eyebrow } from "@/components/Hero";
+import { Headline } from "@/components/Headline";
 import { ButtonLink } from "@/components/Button";
 import { text } from "@/lib/content";
 
@@ -14,7 +15,7 @@ export default function Ministries() {
         <Eyebrow light>
           <T page={P} n={1} />
         </Eyebrow>
-        <T page={P} n={2} as="h1" className="h-display" />
+        <Headline page={P} n={2} />
         <T page={P} n={3} as="p" className="max-w-[56ch] text-lg text-white/85" />
       </Hero>
 

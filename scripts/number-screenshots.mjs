@@ -32,15 +32,16 @@ for (const { slug, path } of SHEET_PAGES) {
     document.querySelectorAll(`[data-sheet-page="${slug}"]`).forEach((el) => {
       const r = el.getBoundingClientRect();
       if (r.width === 0 && r.height === 0) return;
-      marks.push({ n: Number(el.dataset.sheet), x: r.left + window.scrollX, y: r.top + window.scrollY, kind: el.dataset.sheetKind, w: r.width, h: r.height });
+      marks.push({ n: Number(el.dataset.sheet), x: r.left + window.scrollX, y: r.top + window.scrollY, kind: el.dataset.sheetKind, w: r.width, h: r.height, inNav: !!el.closest('header nav') });
     });
     const layer = document.createElement("div");
     layer.style.cssText = "position:absolute;left:0;top:0;width:0;height:0;z-index:99999;pointer-events:none";
     const placed = [];
     for (const m of marks) {
       // Photos: circle near the top-left corner inside the box. Text: circle just left of the text.
-      let x = m.kind === "photo" ? m.x + 14 : Math.max(4, m.x - 30);
-      let y = m.kind === "photo" ? m.y + 14 : m.y + Math.min(m.h, 40) / 2 - 13;
+      // Menu words sit close together, so their circles go just above the word instead.
+      let x = m.kind === "photo" ? m.x + 14 : m.inNav ? m.x + m.w / 2 - 13 : Math.max(4, m.x - 30);
+      let y = m.kind === "photo" ? m.y + 14 : m.inNav ? m.y - 24 : m.y + Math.min(m.h, 40) / 2 - 13;
       while (placed.some((p) => Math.abs(p.x - x) < 28 && Math.abs(p.y - y) < 28)) x += 30;
       placed.push({ x, y });
       const c = document.createElement("div");

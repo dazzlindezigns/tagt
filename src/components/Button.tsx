@@ -2,13 +2,14 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { Icon } from "./Icons";
 
-type Variant = "gold" | "outline-light" | "outline" | "purple";
+type Variant = "gold" | "outline-light" | "outline" | "purple" | "violet";
 
 const styles: Record<Variant, string> = {
   gold: "bg-gradient-to-b from-gold-light to-gold text-purple-950 hover:brightness-105 shadow-[0_6px_18px_-8px_rgba(217,180,108,.8)]",
   "outline-light": "border border-white/70 text-white hover:bg-white/10",
   outline: "border border-purple-800/30 text-purple-800 hover:bg-purple-100",
   purple: "bg-purple-800 text-white hover:bg-purple-700",
+  violet: "bg-violet text-white hover:brightness-110",
 };
 
 export function buttonClass(variant: Variant = "gold", extra = "") {
