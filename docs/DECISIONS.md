@@ -60,7 +60,7 @@ Recurring givers already have to re-enroll once (ShelbyNext → new system). If 
 - Channel ID `UCa1RK9QABO0KllO5YGg9IPw` (public) is the default in `src/lib/site.ts`.
 - Videos come from the channel's public feed: no API key, the latest 15 videos, refreshed every 15 minutes.
 - **Featured Teaching** = the newest video with a real title. Videos titled only with a date ("November 9, 2026") are treated as service recordings.
-- **Live:** during service times (15 minutes before to 2.5 hours after each start, Austin time) the player shows the live stream. Otherwise it plays the latest video with the "not live" line. True live detection and the full archive with series, speaker and Scripture need a YouTube API key and the admin (build prompt §6).
+- **Live:** the site checks the channel's public /live page about once a minute (`/api/live`). When YouTube says a stream is on, the player shows it, muted with autoplay, and a LIVE badge. Otherwise it plays the latest video with the "not live" line. If YouTube can't be reached, it falls back to showing the stream during service times. This reads YouTube's page, so it could break if YouTube changes it. The YouTube API key (build prompt §6) is the sturdier long-term version.
 - Each video has its own page at `/teachings/<video id>`, played inside the site.
 - The archive group names (Recent Messages, Bible Study, Special Services, Series) show as labels. They become working filters once messages are grouped in the admin.
 - **Possible giving link:** the video descriptions say "Link to give: https://tinyurl.com/39k42x94", which goes to a ministryforms.net (ShelbyNext) form. Waiting for Dani to confirm it's the giving page before it's used.

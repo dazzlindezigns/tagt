@@ -5,9 +5,9 @@ import { Icon } from "./Icons";
 
 /**
  * The site's video player.
- * - During service times (Austin time, with a little margin), it shows the channel's live stream.
+ * - When the channel is live (checked through /api/live about once a minute), it shows the stream.
  * - Otherwise it plays the most recent video, with the "not live right now" line under it.
- * Live status from the YouTube API (needs a key) can replace the time windows later.
+ * - If the live check can't reach YouTube, it falls back to showing the stream during service times.
  */
 type Window = { weekday: number; start: number; end: number }; // minutes after midnight, Austin time
 
@@ -32,18 +32,42 @@ export function VideoBlock({
   empty: ReactNode;
 }) {
   const [live, setLive] = useState(false);
+  const [liveId, setLiveId] = useState<string | undefined>();
   useEffect(() => {
-    const check = () => {
+    let stop = false;
+    const inServiceTime = () => {
       const now = austinNow();
-      setLive(windows.some((w) => w.weekday === now.weekday && now.minutes >= w.start && now.minutes <= w.end));
+      return windows.some((w) => w.weekday === now.weekday && now.minutes >= w.start && now.minutes <= w.end);
+    };
+    const check = async () => {
+      try {
+        // Ask the site whether YouTube says we're live (checked about once a minute).
+        const r = await fetch("/api/live", { cache: "no-store" });
+        const s = (await r.json()) as { live: boolean | null; videoId?: string };
+        if (stop) return;
+        if (s.live === null) throw new Error("unknown");
+        setLive(s.live);
+        setLiveId(s.videoId);
+      } catch {
+        // If the check fails, fall back to service times.
+        if (!stop) {
+          setLive(inServiceTime());
+          setLiveId(undefined);
+        }
+      }
     };
     check();
     const t = setInterval(check, 60_000);
-    return () => clearInterval(t);
+    return () => {
+      stop = true;
+      clearInterval(t);
+    };
   }, [windows]);
 
   const src = live
-    ? `https://www.youtube-nocookie.com/embed/live_stream?channel=${channelId}`
+    ? liveId
+      ? `https://www.youtube-nocookie.com/embed/${liveId}?autoplay=1&mute=1`
+      : `https://www.youtube-nocookie.com/embed/live_stream?channel=${channelId}`
     : latest
       ? `https://www.youtube-nocookie.com/embed/${latest.id}`
       : "";

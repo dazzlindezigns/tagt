@@ -53,3 +53,27 @@ export function formatDate(iso: string) {
 
 export const liveUrl = () => `https://www.youtube.com/channel/${site.youtubeChannelId}/live`;
 export const channelVideosUrl = () => `https://www.youtube.com/channel/${site.youtubeChannelId}/videos`;
+
+/**
+ * Is the channel live right now? Reads the channel's public /live page (no API key):
+ * when a stream is on, that page points at the stream's video and reports it as live.
+ * Returns null if YouTube can't be reached, so the player falls back to service times.
+ * Swap for the YouTube API once a key is set up (build prompt §6).
+ */
+export async function liveStatus(): Promise<{ live: boolean; videoId?: string } | null> {
+  if (!site.youtubeChannelId) return null;
+  try {
+    const res = await fetch(`https://www.youtube.com/channel/${site.youtubeChannelId}/live`, {
+      headers: { "Accept-Language": "en-US" },
+      next: { revalidate: 60 },
+    });
+    if (!res.ok) return null;
+    const html = await res.text();
+    // While live, /live shows the stream's watch page: its "current video" is the stream and it says "isLive":true.
+    const videoId = html.match(/"currentVideoEndpoint":\{.{0,400}?"watchEndpoint":\{"videoId":"([\w-]{11})"/)?.[1];
+    const live = !!videoId && html.includes('"isLive":true');
+    return live ? { live: true, videoId } : { live: false };
+  } catch {
+    return null;
+  }
+}
